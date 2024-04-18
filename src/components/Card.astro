@@ -15,7 +15,13 @@ const { href, title, body, profile_image } = Astro.props;
   class="border-extra-soft-white max-w-[600px] rounded-xl border bg-slate-700 p-4 transition-colors duration-200 hover:bg-soft-light columns-1 w-[auto] md:columns-2"
 >
   <a href={href}>
-    <Image src={profile_image} width={300} height={300} alt={title} />
+    <Image
+      src={profile_image}
+      width={300}
+      height={300}
+      alt={title}
+      class="rounded-s-xl object-cover"
+    />
     <h2 class="text-soft-white text-3xl">
       {title}
       <span>&rarr;</span>
