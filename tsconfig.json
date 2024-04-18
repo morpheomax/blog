@@ -1,0 +1,10 @@
+{
+  "extends": "astro/tsconfigs/base",
+  // se incluye compilerOptions para que el path de los imports se puedan llamar con @ 
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}
